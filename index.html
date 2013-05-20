@@ -119,8 +119,10 @@
         </div>
         </section>
 
+        <section data-state="pixdensity">
+        </section>
 
-        <section data-state="astrometry">
+        <section>
         <h2>
           <font face="helvetica">But...</font>
         </h2>
@@ -156,10 +158,76 @@
             </ul>
             </li>
             <li class="fragment">
-            <font face="helvetica">Constructs a generative model of the image using Bayesian optimisation</font>
+            <font face="helvetica">Constructs a generative model of the image using Bayesian optimisation by "freezing" and "thawing" parameters</font>
             </li>
           </ul>
         </div>
+        </section>
+
+        <section>
+        <h2>
+          <font face="helvetica">The Plan</font>
+        </h2>
+
+        <div>
+          <ul>
+            <li class="fragment">
+            <font face="helvetica">Feed calibration data from A.n plus some other guesses into the Tractor as "prior" information and construct a likelihood function</font>
+            <ul>
+              <li class="fragment">
+              <font face="helvetica">Likelihood includes noise model (i.e. sky background), source locations, psf, galaxy models</font>
+              </li>
+            </ul>
+            </li>
+            <li class="fragment">
+            <font face="helvetica">1, 2, ..., Infinity!</font>
+            </li>
+            <li class="fragment">
+            <font face="helvetica">Eventually... collate parameters from many images and construct metamodel of the sky</font>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+        <section>
+        <h2>
+          <font face="helvetica">Progress</font>
+        </h2>
+
+        <div>
+          <ul>
+            <li class="fragment">
+            <font face="helvetica">Image No. 1 being modelled, many kinks to iron out yet!</font>
+            <ul>
+              <li class="fragment">
+              <font face="helvetica">Some success with fitting galaxy models but optimal ordering of freezing and thawing still troublesome</font>
+              </li>
+            </ul>
+            </li>
+            <li class="fragment">
+            <font face="helvetica">Offshoot project:</font>
+            <ul>
+              <li class="fragment">
+              <font face="helvetica">Find variation in location of sources as compared with catalogue</font>
+              </li>
+              <li class="fragment">
+              <font face="helvetica">Find "covisibility" of stars across images to improve catalogue</font>
+              </li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+        <section>
+        <h2>
+          <font face="helvetica">Image 1</font>
+        </h2>
+
+        <h2>
+          <img src="http://img.docstoccdn.com/thumb/orig/2227826.png" />
+          <br />
+        </h2>
         </section>
 
       </div>
