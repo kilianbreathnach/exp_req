@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Experimental Requirement Presentation</title>
+
+    <meta name="description" content="Talk about my progress with image modelling">
+    <meta name="author" content="Kilian Walsh">
+
+    <link rel="stylesheet" href="./reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="./reveal.js/css/theme/simple.css" id="theme">
+
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+        <h2>
+          <font face="helvetica">Image Modelling to Generate a Probabilistic Astronomical Catalogue</font>
+        </h2>
+
+        <div>
+          <font face="helvetica">20 May 2013</font>
+        </div>
+
+        <div>
+          <font face="helvetica">Kilian Walsh</font>
+        </div>
+        </section>
+
+        <section>
+        <h2>
+          <font face="helvetica">Goals</font>
+        </h2>
+
+        <h4>
+          <font face="helvetica">Astrometry.net</font>
+        </h4>
+
+        <div>
+          <ul>
+            <li class="fragment">
+            <font face="helvetica"><strong>Astrometry.net</strong></font>
+            <ul>
+              <li class="fragment">
+              <font face="helvetica">Work with the A.n code and data to improve and extend functionality</font>
+              </li>
+              <li class="fragment">
+              <font face="helvetica">Improved code then allows us to do...</font>
+              </li>
+            </ul>
+            </li>
+            <li class="fragment">
+            <font face="helvetica"><strong>Science</strong></font>
+            <ul>
+              <li class="fragment">
+              <font face="helvetica">Build a statistical model of the sky</font>
+              </li>
+              <li class="fragment">
+              <font face="helvetica">Use this model to make discoveries</font>
+              </li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+        <section data-state="astrometry">
+        <h2>
+          <font face="helvetica">Why Astrometry.net?</font>
+        </h2>
+
+        <div>
+          <ul>
+            <li class="fragment">
+            <font face="helvetica">Crowdsource = Lots of data -> currently 36,323 items on flickr</font>
+            </li>
+            <li class="fragment">
+            <font face="helvetica">Can be used to calibrate any astronomical image</font>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+      </div>
+
+    </div>
+
+
+    <script src="./reveal.js/lib/js/head.min.js"></script>
+    <script src="./reveal.js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: './reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+
+
+  </body>
+
+</html>
+
