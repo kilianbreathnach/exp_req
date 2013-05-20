@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./reveal.js/css/reveal.css">
     <link rel="stylesheet" href="./reveal.js/css/theme/simple.css" id="theme">
 
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 
   </head>
 
@@ -117,7 +120,7 @@
         </section>
 
 
-        <section>
+        <section data-state="astrometry">
         <h2>
           <font face="helvetica">But...</font>
         </h2>
@@ -125,10 +128,13 @@
         <div>
           <ul>
             <li class="fragment">
-            <font face="helvetica">Calibration only achieves accurate positions of astronomical sources</font>
+            <font face="helvetica">Calibration only achieves accurate <i>positions</i> of astronomical sources</font>
             </li>
             <li class="fragment">
-            <font face="helvetica">Calibration is done using an imperfect catalogue (USNO-B)</font>
+            <font face="helvetica">We would also like to know about source <i>brightnesses</i> - enables more scientific goals</font>
+            </li>
+            <li class="fragment">
+            <font face="helvetica">Calibration done using an imperfect catalogue (USNO-B)</font>
             </li>
           </ul>
         </div>
@@ -142,10 +148,15 @@
         <div>
           <ul>
             <li class="fragment">
-            <font face="helvetica">Crowdsource = Lots of data -> currently 36,323 items on flickr</font>
+            <font face="helvetica">Generates "probabilistically justified astronomical catalogues"</font>
+            <ul>
+              <li class="fragment">
+              <font face="helvetica"> \( p(\Theta | \{ y_{i} \}) = \frac{p(\{ y_{i} \} | \Theta , I) p(\Theta | I)}{p(\{ y_{i} \} | I)}  \) Wahey!</font>
+              </li>
+            </ul>
             </li>
             <li class="fragment">
-            <font face="helvetica">Can be used to calibrate any astronomical image</font>
+            <font face="helvetica">Constructs a generative model of the image using Bayesian optimisation</font>
             </li>
           </ul>
         </div>
